@@ -20,6 +20,7 @@ thread_messages = client.beta.threads.messages.list(thread_id, order="asc")
 
 #페이지 제목
 st.header("친절하고 유쾌한 양도세 컨설팅 Kevin AI")
+st.image('https://i.namu.wiki/i/qQrhArFbtzzKM4CEV8oKIuX6Qqlu5T1jLy9Eq1esUkqzIX478D4CwOW_6d2kN6hSpdvehT33bi4qGDHQwoXIwP6R6Xma13tkVNxW4mWIM0NGUF_y_hEy8EF5Ji3QGzQYR2Isp8nTnnyWhMdxW6iqyA.webp', caption='Kevin', width=200)
 
 #메세지 역순으로 가져와서 UI에 뿌려주기
 for msg in thread_messages.data:
