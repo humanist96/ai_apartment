@@ -19,7 +19,7 @@ assistant_id = "asst_UX24UArvIVl4vj2iB9CjRwtC"
 thread_messages = client.beta.threads.messages.list(thread_id, order="asc")
 
 #페이지 제목
-st.header("부동산 양도세 컨설팅해주는 Kevin AI")
+st.header("칠전하고 유쾌한 양도세 컨설팅 Kevin AI")
 
 #메세지 역순으로 가져와서 UI에 뿌려주기
 for msg in thread_messages.data:
