@@ -21,22 +21,9 @@ thread_messages = client.beta.threads.messages.list(thread_id, order="asc")
 #페이지 제목
 st.header("친절하고 유쾌한 양도세 컨설팅 Kevin AI")
 
-st.markdown(
-    """
-    <style>
-        button[title^=Exit]+div [data-testid=stImage]{
-            text-align: center;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-        }
-    </style>
-    """, unsafe_allow_html=True
-)
-
-"# Center an image when in fullscreen"
-"Images (and most elements in general) are always aligned to the left"
+with open("style.css") as f:
+    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+    
 st.image('kevin.png', caption='Kevin', width=300, output_format="auto")
 
 #메세지 역순으로 가져와서 UI에 뿌려주기
